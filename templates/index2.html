@@ -1,0 +1,43 @@
+{% extends "base.html" %} {% block content %}
+<section class="text-center py-10 px-4">
+  <h1 class="text-3xl font-semibold mb-6">This is what Lottie Images are</h1>
+
+  <p class="text-lg text-gray-700 max-w-2xl mx-auto mb-10">
+    Lottie is a lightweight, open-source animation format developed by Airbnb
+    that allows developers to render high-quality animations in real time on web
+    and mobile applications. These animations are exported as JSON files from
+    tools like Adobe After Effects using the Bodymovin plugin, making them
+    resolution-independent, scalable, and small in size. Lottie animations can
+    be easily embedded into websites or apps and controlled with JavaScript,
+    allowing for interactivity like play on click, loop, or animation syncing
+    with scroll. This makes Lottie an ideal choice for modern UI/UX design,
+    enhancing user engagement without the performance cost of traditional GIFs
+    or videos.
+  </p>
+
+  <!-- Hotel Booking Lottie -->
+  <div class="flex justify-center mb-10">
+    <lottie-player
+      src="/static/assets/Zero Purchase.json"
+      background="transparent"
+      speed="1"
+      style="width: 300px; height: 300px"
+      loop
+      autoplay
+    >
+    </lottie-player>
+  </div>
+  //second lottie image
+  <div class="flex justify-center">
+    <lottie-player
+      src="/static/assets/Hotel Booking.json"
+      background="transparent"
+      speed="1"
+      style="width: 300px; height: 300px"
+      loop
+      autoplay
+    >
+    </lottie-player>
+  </div>
+</section>
+{% endblock %}
